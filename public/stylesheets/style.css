@@ -94,12 +94,22 @@ form {
   outline: none;
 }
 
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 input {
+  text-align: center;
   padding: 12px px;
   margin: 8px 0;
-  border-radius: 25px;
+  border-radius: 12px;
   background-color: white;
-  max-width: 80%;
+}
+
+label {
+  margin-right: 12px;
 }
 
 #addBtn {
@@ -108,7 +118,7 @@ input {
 
 main {
   padding-top: 20px;
-  width: 70%;
+  width: 85%;
   margin: 30px auto 30px auto;
   display: block;
   align-content: center;
@@ -119,6 +129,7 @@ main {
 .form-container {
   border-radius: 12px;
   border: 2px solid black;
+  width: 70%;
 }
 
 footer {
@@ -140,6 +151,7 @@ footer {
 footer p {
   margin: 10px auto 18px auto;
   font-weight: bolder;
+  background-color: black;
 }
 
 .footer-unblocker {
@@ -169,7 +181,7 @@ footer p {
   color: black;
 }
 .singlePost,
-.recipe-post,
+.post,
 .for-loggin,
 .for-signup {
   padding: 30px 0 30px 0;
@@ -191,7 +203,7 @@ footer p {
 }
 
 .post,
-.add-recipe,
+.add-post,
 .login-content,
 .signup-content {
   width: 85%;
@@ -246,11 +258,15 @@ footer p {
 }
 
 .center button {
-  margin-top: 28px;
+  margin-top: 32px;
   padding: 4px 13px 4px 13px;
   border-radius: 15px;
   background-color: black;
-  color: aquamarine;
+  color: white;
+}
+
+#post-directions {
+  background-color: white;
 }
 
 @media screen and (max-width: 980px) {
