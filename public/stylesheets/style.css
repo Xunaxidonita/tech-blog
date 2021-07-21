@@ -68,9 +68,10 @@ a:active {
 } */
 
 .button {
-  background-color: black;
+  padding: 3px 10px 3px 10px;
+  background-color: rgb(97, 96, 96);
   color: aquamarine;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .label {
@@ -267,6 +268,57 @@ footer p {
 
 #post-directions {
   background-color: white;
+}
+
+.card-header,
+.card-title,
+.card-title a,
+.card-header p {
+  background-color: rgb(48, 47, 47);
+  color: aquamarine;
+}
+
+.card-body a {
+  color: rgb(97, 96, 96);
+}
+
+section {
+  padding-top: 15px;
+}
+
+section h2 {
+  margin: 30px;
+}
+
+.edit-link {
+  float: right;
+}
+
+article {
+  border-radius: 8px;
+  padding: 25px;
+}
+
+textarea {
+  background-color: white;
+}
+
+.edit-text {
+  min-width: 500px;
+  display: inline-block;
+}
+
+.edit-post-form button {
+  padding: 3px 10px 3px 10px;
+  background-color: rgb(97, 96, 96);
+  color: aquamarine;
+}
+.comment-form {
+  margin-top: 25px;
+}
+
+.button-group {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 980px) {

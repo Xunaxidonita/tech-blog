@@ -1,0 +1,31 @@
+{{!-- <article class="post">
+<div class="title">
+    <h4>
+        {{this.title}}
+    </h4>
+</div>
+<div class="subtitle">
+    Submitted by {{this.username}} on {{format_date this.created_at}}
+</div>
+
+<div class="description">
+  {{ this.description }}
+</div>
+
+<div class="meta">
+    <a href="/post/{{this.id}}">{{this.comments.length}} {{format_plural "comment" this.comments.length}}</a>
+  </div>
+
+</article> --}}
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"><a href="/post/{{this.id}}" target="_blank">{{this.title}}</a></h5>
+        <p class="card-text"> Submited on {{format_date this.created_at}}</p>
+    </div>
+    <div class="card-body">
+        <p class="card-text"> {{this.description}}</p>
+        <a href="/post/{{this.id}}">{{this.comments.length}} Comment(s)</a>
+        <a href="/dashboard/edit/{{this.id}}" class="edit-link">Edit post</a>
+
+    </div>
+</div>
