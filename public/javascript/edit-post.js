@@ -7,7 +7,6 @@ $(".edit-post-form").on("submit", async (event) => {
       obj[item.name] = item.value;
       return obj;
     }, {});
-  debugger;
   try {
     const response = await fetch(`/api/posts/${data.id}`, {
       method: "PUT",

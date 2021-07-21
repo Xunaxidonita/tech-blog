@@ -176,6 +176,7 @@ footer p {
   border: 1px solid black;
   margin-bottom: 24px;
   background-color: aquamarine;
+  width: 100%;
 }
 
 .card a {
@@ -304,7 +305,7 @@ textarea {
 }
 
 .edit-text {
-  min-width: 500px;
+  min-width: 100%;
   display: inline-block;
 }
 
@@ -319,6 +320,14 @@ textarea {
 
 .button-group {
   margin-top: 20px;
+}
+
+.edit-post-form {
+  width: 100%;
+}
+
+.text-group {
+  width: 100%;
 }
 
 @media screen and (max-width: 980px) {
